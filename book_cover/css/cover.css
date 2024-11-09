@@ -1,0 +1,358 @@
+/* Embedded Fonts */
+@font-face {
+    font-family: 'PortraitCond-Bold';
+    src: url("../fonts/Portrait_Condensed_Family/PortraitCond-Bold-Trial.otf") format("opentype");
+}
+
+/* Container Items */
+.cover {
+    width: 500px;
+    height: 817px;
+    border: solid goldenrod 1px;
+    background: url("../images/TheShining.jpg");
+    background-size: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    perspective: 800px;
+    z-index: 2;
+}
+
+.blood1 {
+    font-family: 'PortraitCond-Bold';
+    font-size: 100px;
+    color: #CE1D2D;
+    position: absolute;
+    left: 34%;
+    top: 10%;
+    transform: translate(-50%,-50%);
+    width: 90px;
+    z-index: 4;
+    transition: 0.5s;
+}
+
+.smallBlood1 {
+    background: url("../images/smallBlood.png") no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 34%;
+    top: 19.5%;
+    transform: translate(-50%,-50%);
+    width: 90px;
+    height: 120px;
+    mask-image: radial-gradient(circle, black 50%, transparent 51%);
+    mask-size: 100% 200%;  /* Double the height for vertical animation */
+    mask-position: 0 0;
+    z-index: 3;
+    transition: 1s;
+    animation: shiftMask 30s infinite linear;
+}
+
+.smallBlood2 {
+    background: url("../images/smallBlood.png") no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 68%;
+    top: 19.5%;
+    transform: translate(-50%,-50%);
+    width: 90px;
+    height: 120px;
+    mask-image: radial-gradient(circle, black 50%, transparent 51%);
+    mask-size: 100% 200%;  /* Double the height for vertical animation */
+    mask-position: 0 0;
+    z-index: 3;
+    transition: 1s;
+    animation: shiftMask 30s infinite linear;
+}
+
+.blood2 {
+    font-family: 'PortraitCond-Bold';
+    font-size: 100px;
+    color: #CE1D2D;
+    position: absolute;
+    left: 45%;
+    top: 22%;
+    transform: translate(-50%,-50%);
+    width: 90px;
+    transition: 0.5s;
+    z-index: 4;
+}
+
+.longBlood {
+    background: url("../images/longBlood.png") no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 50%;
+    top: 29.5%;
+    transform: translate(-50%,-50%);
+    width: 180px;
+    height: 90px;
+    mask-image: radial-gradient(circle, black 50%, transparent 51%);
+    mask-size: 100% 200%;  /* Double the height for vertical animation */
+    mask-position: 0 0;
+    transition: 1s;
+    z-index: 3;
+    animation: shiftMask 30s infinite linear;
+}
+
+@keyframes shiftMask {
+    0%, 100%{
+        mask-position: 0 0;  /* Start at the top */
+      }
+      50% {
+        mask-position: 0 100%; /* Move mask to the bottom */
+      }
+}
+
+/* .square {
+    width: 100px;
+    height: 100px;
+    padding: 33px;
+    box-sizing: border-box;
+    border: dashed white 1px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    transition: 1s;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border: solid white 1px;
+    background: white;
+    border-radius: 100%;
+    position: relative;
+    left: 0px;
+    transition: 1s;
+}
+
+.square:hover {
+    border: solid white 1px;
+    background: white;
+    padding: 0px;
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+.square:hover .circle{
+    width: 100px;
+    height: 100px;
+    left: 200px;
+    border: solid black 1px;
+    background: black;
+    border-radius: 0%;
+    transition: 1s;
+}
+
+.square:active {
+    border-radius: 100%;
+    background: yellow;
+    border: yellow;
+    transform: scale(0.95);
+    transition: 0.75s;
+}
+
+.a {
+    font-family: "PT Sans";
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    left: 100px;
+    cursor: default;
+}
+
+.a::before {
+    content: 'C';
+    position: absolute;
+    left: 0px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.a::after {
+    content: 'E';
+    position: absolute;
+    left: 0px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.a_box:hover .a::before {
+    left: 30px;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.a_box:hover .a::after {
+    left: 60px;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.a_box:active .a::before {
+    left: 300px;
+    transition: 0.8s;
+}
+
+.a_box:active .a::after {
+    left: 600px;
+    transition: 0.8s;
+} */
+
+.left_elevator {
+    width: 28.2px;
+    height: 159.1px;
+    background: #B41A24;
+    position: absolute;
+    left: 29.7%;
+    top: 32.5%;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.left_door {
+    width: 28.8px;
+    height: 159.1px;
+    background: black;
+    position: absolute;
+    left: 36.4%;
+    top: 32.5%;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.left_slider {
+    width: 28.8px;
+    height: 159.1px;
+    background: #B41A24;
+    position: absolute;
+    left: 36.4%;
+    top: 32.5%;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 5;
+    animation: sliderAnimation1 2s infinite ease-in-out;
+}
+
+@keyframes sliderAnimation1 {
+    0%, 100% {
+        left: 36.4%;
+    }
+    50% {
+        left: 29.7%;
+    }
+}
+
+.PeopleBlocking {
+    width: 200px;
+    height: 159.1px;
+    position: absolute;
+    left: 36.4%;
+    top: 32.5%;
+    overflow: hidden;
+}
+
+.Jack_Nicholson {
+    width: 100px;
+    height: 159.1px;
+    background: url("../images/pngegg\ \(3\).png") no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: -70%;
+    top: 40%;
+    transform:translate(-50%,-50%) rotate(45deg);
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 4;
+    animation: JackAnimation 4s ease-in-out infinite;
+}
+
+.Girls {
+    width: 100px;
+    height: 159.1px;
+    background: url("../images/578-5784182_the-shining-png.png") no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: -70%;
+    top: 47.5%;
+    transform:translate(-50%,-50%) rotate(45deg);
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 4;
+    animation: GirlsAnimation 4s ease-in-out infinite;
+}
+
+@keyframes JackAnimation {
+    0%, 50%, 100% {
+        left: -70%;
+    }
+    25% {
+        left: 36.4%;
+    }
+}
+
+@keyframes GirlsAnimation {
+    0%, 50%, 100% {
+        left: -70%;
+    }
+    75% {
+        left: 36.4%;
+    }
+}
+
+.shift1 {
+    font-family: 'PortraitCond-Bold';
+    font-size: 150px;
+    color: black;
+    position: absolute;
+    left: 40%;
+    bottom: 15%;
+    perspective-origin: bottom;
+    transform-origin: center;
+    transform: translate(-50%,-50%) rotateX(50deg);
+    width: 90px;
+    animation: shiftAnimation1 4s infinite ease-in-out;
+    z-index: 3;
+}
+
+.shift2 {
+    font-family: 'PortraitCond-Bold';
+    font-size: 200px;
+    color: black;
+    position: absolute;
+    left: 12%;
+    bottom: -5%;
+    perspective-origin: bottom;
+    transform-origin: center;
+    transform: translate(-50%,-50%) rotateX(50deg);
+    width: 90px;
+    animation: shiftAnimation2 4s infinite ease-in-out;
+    z-index: 3;
+}
+
+/* Define keyframes for the shift animation */
+@keyframes shiftAnimation1 {
+    0%, 100% {
+        bottom: 15%;
+        transform: translate(-50%,-50%) rotateX(50deg) scaleX(1);
+    }
+    50% {
+        bottom: 20%;
+        transform: translate(-40%,-50%) rotateX(55deg) scaleX(.8);
+    }
+}
+
+@keyframes shiftAnimation2 {
+    0%, 100% {
+        bottom: -5%;
+        transform: translate(-50%,-50%) rotateX(50deg) scaleX(1);
+    }
+    50% {
+        bottom: 0%;
+        transform: translate(-10%,-50%) rotateX(55deg) scaleX(.8);
+    }
+}
